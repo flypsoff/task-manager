@@ -1,0 +1,20 @@
+<form class="taskForm-container" [formGroup]="taskForm">
+  <mat-form-field>
+    <input matInput formControlName="name" placeholder="Enter task name">
+    <mat-error *ngIf="taskForm?.controls.name.invalid && taskForm?.controls.name.touched">Field is required.</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput formControlName="description" placeholder="Enter task description" rows="5"></textarea>
+  </mat-form-field>
+
+  <div class="taskForm-footer">
+    <app-button
+      class="taskForm-modifyTask"
+      [disabled]="isButtonDisabled"
+      [text]=btnText
+      (clickBtn)="onClick()"
+    ></app-button>
+    <ng-content></ng-content>
+  </div>
+</form>

@@ -1,0 +1,10 @@
+<div class="taskList-container">
+  <div *ngFor="let item of taskItems" class="taskList-item">
+    <app-task-item
+      [taskItem]="item"
+      (changeCompletion)="onChangeCompletion($event)"
+      (selectItem)="onSelectItem($event)"
+      (deleteItem)="onDeleteItem($event)"
+    ></app-task-item>
+  </div>
+</div>

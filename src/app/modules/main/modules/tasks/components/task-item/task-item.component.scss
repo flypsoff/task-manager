@@ -1,0 +1,61 @@
+.taskItem {
+  &-container {
+    background-color: #d7c9db;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+
+    &:hover {
+      border: 0.0125rem solid #86728b;
+    }
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &Actions {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-block {
+    margin-bottom: 0.125rem;
+  }
+
+  &-label {
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #434c5d;
+    font: {
+      size: 0.625rem;
+      weight: 500;
+    };
+  }
+
+  &-removeTaskBtn {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 0.75rem;
+    color: #86728b;
+
+    &:hover {
+      color: #514354;
+    }
+  }
+}
+
+::ng-deep .taskItem-container {
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #514354;
+  }
+
+  .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element,
+  .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+    background: none;
+  }
+}

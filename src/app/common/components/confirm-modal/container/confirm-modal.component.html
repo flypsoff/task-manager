@@ -1,0 +1,11 @@
+<div mat-dialog-title>
+  <span>{{ data.message }}</span>
+</div>
+<div mat-dialog-content class="confirmModal-body">
+  <span>{{ data.question }}</span>
+</div>
+<div mat-dialog-actions class="confirmModal-footer">
+  <app-button class="confirmModal-footerSecondaryBtn" isSecondary="true" [text]="data.cancel"
+              [mat-dialog-close]="false"></app-button>
+  <app-button [text]="data.submit" [mat-dialog-close]="true"></app-button>
+</div>

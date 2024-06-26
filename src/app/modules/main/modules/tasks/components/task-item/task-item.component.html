@@ -1,0 +1,28 @@
+<div class="taskItem-container" (click)="onSelectItem(taskItem.id)">
+  <div class="taskItem-header">
+    <div class="taskItem-block">
+      <label class="taskItem-label">Name</label>
+      <p>{{ taskItem.name }}</p>
+    </div>
+
+    <div class="taskItem-headerActions">
+      <mat-checkbox
+        matTooltip="Mark as completed"
+        [checked]="taskItem.isCompleted"
+        (click)="$event.stopPropagation();"
+        (change)="onChangeCompletion(taskItem.id, $event)">
+      </mat-checkbox>
+      <mat-icon
+        class="taskItem-removeTaskBtn"
+        svgIcon="delete-icon"
+        matTooltip="Delete item"
+        (click)="onDeleteItem(taskItem.id, $event)"
+      ></mat-icon>
+    </div>
+  </div>
+
+  <div>
+    <label class="taskItem-label">Description</label>
+    <p>{{ taskItem.description }}</p>
+  </div>
+</div>

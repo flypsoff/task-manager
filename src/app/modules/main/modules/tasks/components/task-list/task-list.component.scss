@@ -1,0 +1,11 @@
+.taskList {
+  &-container {
+    height: 100%;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+  }
+}

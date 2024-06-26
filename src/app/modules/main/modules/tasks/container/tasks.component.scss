@@ -1,0 +1,13 @@
+.tasks {
+  &-container {
+    height: 100%;
+  }
+
+  &-expansion {
+    margin-bottom: 1rem;
+
+    &-panel {
+      background-color: #fefaff;
+    }
+  }
+}

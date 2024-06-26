@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body,
+h2,
+p,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #eae2ed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.modal-window {
+  .mat-dialog-container {
+    background-color: #eae2ed;
+  }
+}

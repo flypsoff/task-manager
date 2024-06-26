@@ -1,0 +1,9 @@
+<button
+  mat-button
+  class="button"
+  [ngClass]="{'secondary': isSecondary}"
+  [disabled]="disabled"
+  [type]="type"
+  (click)="onClick()">
+  {{ text }}
+</button>

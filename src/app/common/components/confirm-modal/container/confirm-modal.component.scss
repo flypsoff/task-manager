@@ -1,0 +1,14 @@
+.confirmModal {
+  &-body {
+    padding-bottom: 1rem;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    &SecondaryBtn {
+      margin-right: 0.5rem;
+    }
+  }
+}

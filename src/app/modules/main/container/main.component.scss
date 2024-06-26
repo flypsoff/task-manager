@@ -1,0 +1,19 @@
+.main {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 2rem;
+  }
+
+  &-header {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  &-text {
+    font-size: xx-large;
+    font-style: italic;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="task-container">
+  <ng-container *ngIf="(task$ | async) as task; else noTask">
+    <app-task-form btnText="Edit Task" [task]="task" (modifyTask)="onEditTask($event)">
+      <ng-container *ngTemplateOutlet="returnBackBtn"></ng-container>
+    </app-task-form>
+  </ng-container>
+  
+  <ng-template #noTask>
+    <div class="task-noTask">
+      <div class="task-noTaskText">Task with current id doesn't exist</div>
+      <ng-container *ngTemplateOutlet="returnBackBtn"></ng-container>
+    </div>
+  </ng-template>
+</div>
+
+<ng-template #returnBackBtn>
+  <button mat-button (click)="onClick()">Return back</button>
+</ng-template>

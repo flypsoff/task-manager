@@ -1,0 +1,20 @@
+<div class="tasks-container">
+  <div class="tasks-expansion">
+    <mat-accordion>
+      <mat-expansion-panel class="tasks-expansion-panel">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Add new task +</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <app-task-form btnText="Add Task" (modifyTask)="onAddTask($event)"></app-task-form>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+  <app-task-list
+    [taskItems]="tasks$ | async"
+    (changeCompletion)="onChangeCompletion($event)"
+    (selectItem)="onSelectItem($event)"
+    (deleteItem)="onDeleteItem($event)"
+  ></app-task-list>
+</div>

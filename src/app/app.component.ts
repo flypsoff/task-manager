@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 
+import { CustomIconService } from './common/core/services/custom-icon.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'task-manager';
+  constructor(private customIconService: CustomIconService) {
+    this.customIconService.init();
+  }
 }
