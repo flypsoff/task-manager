@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomeComponent } from './container/home.component';
 import { HomeRoutingModule } from './home-routing.module';
-import { ButtonModule } from '../../../../common/components/button/button.module';
+import { ButtonModule } from '../../../../common/share/components/button/button.module';
 
 @NgModule({
   declarations: [HomeComponent],
