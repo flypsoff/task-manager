@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './container/main.component';
 import { MainRoutingModule } from './main-routing.module';
 import { TasksService } from './services/tasks.service';
-import { ConfirmModalModule } from '../../common/components/confirm-modal/confirm-modal.module';
+import { ConfirmModalModule } from '../../common/share/components/confirm-modal/confirm-modal.module';
 
 
 @NgModule({

@@ -12,7 +12,7 @@ import { TasksRoutingModule } from './tasks-routing.module';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { TaskFormComponent } from './components/task-form/task-form.component';
-import { ButtonModule } from '../../../../common/components/button/button.module';
+import { ButtonModule } from '../../../../common/share/components/button/button.module';
 
 @NgModule({
   declarations: [TasksComponent, TaskListComponent, TaskItemComponent, TaskFormComponent],
