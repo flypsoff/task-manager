@@ -1,1 +1,1 @@
-export * from './task.mock';
+export * from './task-item.mock';
