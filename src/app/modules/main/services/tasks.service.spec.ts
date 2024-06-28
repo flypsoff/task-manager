@@ -3,10 +3,17 @@ import { TestBed } from '@angular/core/testing';
 import { TasksService } from './tasks.service';
 
 describe('TasksService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+  let taskService: TasksService;
+
+  beforeEach(() => TestBed.configureTestingModule({
+    providers: [TasksService]
+  }));
+
+  beforeEach(() => {
+    taskService = TestBed.get(TasksService);
+  });
 
   it('should be created', () => {
-    const service: TasksService = TestBed.get(TasksService);
-    expect(service).toBeTruthy();
+    expect(taskService).toBeTruthy();
   });
 });
